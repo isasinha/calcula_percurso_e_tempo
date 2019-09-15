@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">calcula_percurso_e_tempo</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_permition">Favor conceder permissão ao GPS antes</string>
+    <string name="gps_is_off">O GPS está desativado</string>
+    <string name="metros_total">%f</string>
+</resources>

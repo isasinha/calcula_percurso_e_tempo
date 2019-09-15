@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:columnCount="2"
+    android:rowCount="6"
+    android:useDefaultMargins="false">
+
+
+    <Button
+        android:id="@+id/permissionGpsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="2"
+        android:layout_row="0"
+        android:text="Conceder permissão de GPS"
+        android:onClick="requestPermissionGPS"/>
+
+    <Button
+        android:id="@+id/activateGpsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="Ativar GPS"
+        android:onClick="activateGPS"/>
+
+    <Button
+        android:id="@+id/deactivateGpsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="Desativar GPS"
+        android:onClick="deactivateGPS"/>
+
+    <Button
+        android:id="@+id/initiateButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="Iniciar Percurso" />
+
+    <Button
+        android:id="@+id/terminateButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="Terminar Percurso" />
+
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_marginTop="10dp"
+        android:text="Distância Percorrida:" />
+
+    <TextView
+        android:id="@+id/distanceshowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_marginTop="10dp"
+        android:text="Tempo passado:" />
+
+    <TextView
+        android:id="@+id/timeShowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_columnSpan="2">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_marginTop="10dp"
+            android:hint="O que deseja procurar?" />
+
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    </LinearLayout>
+
+</GridLayout>
